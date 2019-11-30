@@ -6,7 +6,7 @@
 #include <cstdlib>
 
 using namespace std;
-
+// zadanie 1 START
 int* przydzielTablice(int rozmiar) {
 	int* tab = new int[rozmiar];
 	return tab;
@@ -29,14 +29,34 @@ void wypelnijTabliceZerami(int* tab, int rozmiar) {
 	}
 }
 
+// zadanie 1 END
+
+// zadanie 2 START
+
+void iloczynSuma(float& iloczyn, float& suma, float* tablica, int rozmiar);
+void iloczynSuma(float& iloczyn, float& suma, float liczba1, float liczba2);void iloczynSuma(float& iloczyn, float& suma, float* tablica, int rozmiar) {	iloczyn = tablica[0];	suma = tablica[0];	for (int i = 1; i < rozmiar; i++) {		iloczyn = iloczyn * tablica[i];		suma = suma + tablica[i];	}}void iloczynSuma(float& iloczyn, float& suma, float liczba1, float liczba2) {	iloczyn = liczba1 * liczba2;	suma = liczba1 + liczba2;}// zadanie 2 END;
+
+
 
 int main()
 {	
-	int rozmiarTablicy = 4;
-	int* tablica = przydzielTablice(4);
-	wypelnijTabliceZerami(tablica, rozmiarTablicy);
-	wyswietlTablice(tablica, rozmiarTablicy);
-	zwolnijTablice(tablica);
+	/*
+		int rozmiarTablicy = 4;
+		int* tablica = przydzielTablice(4);
+		wypelnijTabliceZerami(tablica, rozmiarTablicy);
+		wyswietlTablice(tablica, rozmiarTablicy);
+		zwolnijTablice(tablica);
+	*/
+	float rozmiar = 2;
+	float suma;
+	float iloczyn;
+	float tablica[2];
+	tablica[0] = 1;
+	tablica[1] = 21;
+	float liczba1 = 12;
+	float liczba2 = 11;
+	iloczynSuma(iloczyn, suma, liczba1, liczba2);
+	cout << suma << " - " << iloczyn << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
