@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1575088630 source:c:\users\hp\desktop\studia\sem 3\pk3\programy obiektowe\zadanie z macierza\klasa.cpp
+	<iostream>
+	"klasa.h"
+	<ctime>
+	<cstdlib>
+
+1575088025 c:\users\hp\desktop\studia\sem 3\pk3\programy obiektowe\zadanie z macierza\klasa.h
+	<iostream>
+
+1575087642 source:c:\users\hp\desktop\studia\sem 3\pk3\programy obiektowe\zadanie z macierza\main.cpp
+	<iostream>
+	"klasa.h"
+	<ctime>
+
